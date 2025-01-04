@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orlank Technology</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="background"></div>
+        <img src="images/logo.png" alt="master project">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">About</a>
+          </li>
+          <li class="menu-item services">
+            <a href="#">Services</a>
+            <ul class="submenu">
+              <li><a href="#">Service 1</a></li>
+              <li><a href="#">Service 2</a></li>
+              <li><a href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="#">Career</a>
+          </li>
+          <li class="menu-item">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary" id="consultingBtn">
+            Free Consulting
+            <span class="chevron-down"></span>
+        </button>
+      </nav>
+               
+    <!-- Social Sidebar -->
+    <div class="social-sidebar">
+        <a href="tel:+1234567890" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+        </a>
+        <a href="https://wa.me/1234567890" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+        <a href="https://instagram.com" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </a>
+        <a href="https://facebook.com" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+        </a>
+        <a href="mailto:info@example.com" class="social-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Contact Form Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">×</button>
+            <div class="modal-header">
+                <h2>Let's grow together</h2>
+                <p>Leave a message</p>
+            </div>
+            <form id="contactForm">
+                <input type="text" placeholder="Name" required>
+                <input type="tel" placeholder="Mobile No" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Explain Your Requirements (Minimum 50 Characters)" required minlength="50"></textarea>
+                <button type="submit" class="btn btn-primary">Submit now</button>
+                <button type="button" class="btn btn-outline">
+                    Get in Touch
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="subtitle">IT Business Consulting</h2>
+                <h1 class="title">Best IT Software Company</h1>
+                <p class="description">
+                    Master Project, a leading technology company with years of experience in
+                    delivering top-notch services we got the positive reviews from our clients.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="circle-image">
+                    <img src="images/banner-img.png" alt="Technology Illustration">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="services-section">
+        <h2>What We Do</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="images/analytics.jpg" alt="Website Development">
+                <h3>Advanced Analytics & Business Intelligence</h3>
+                <p>Get website designing and development services to drive your business successfully.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/50" alt="App Development">
+                <h3>Enterprise Application Development</h3>
+                <p>Having a mobile application comes with many benefits to connect directly to customers.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/50" alt="Software Development">
+                <h3>Drones Software Development & IoT</h3>
+                <p>Develop custom software with futuristic features and functions.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/50" alt="Digital Marketing">
+                <h3>Software Support and Maintenance</h3>
+                <p>Promote your brand and message through social media marketing.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/50" alt="Graphic Designers">
+                <h3>Hire Front-End Developers</h3>
+                <p>Create visually compelling designs for your business needs.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/50" alt="Blockchain Development">
+                <h3>Blockchain Development</h3>
+                <p>Develop secure and efficient blockchain solutions for your business.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/50" alt="Game Development">
+                <h3>Game Development</h3>
+                <p>Create engaging and interactive games for various platforms.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://via.placeholder.com/50" alt="IoT & RPA">
+                <h3>IoT & RPA</h3>
+                <p>Innovate with Internet of Things and Robotic Process Automation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose-us-section">
+        <div class="choose-us-content">
+            <h2>Why Choose Us</h2>
+            <ul class="choose-us-list">
+                <li class="choose-us-item">
+                    <div class="choose-us-icon">
+                        <img src="https://via.placeholder.com/20" alt="Check">
+                    </div>
+                    <div class="choose-us-text">
+                        <h3>Latest Technology</h3>
+                        <p>Embrace the latest technology to transform your business.</p>
+                    </div>
+                </li>
+                <li class="choose-us-item">
+                    <div class="choose-us-icon">
+                        <img src="https://via.placeholder.com/20" alt="Check">
+                    </div>
+                    <div class="choose-us-text">
+                        <h3>Trusted By 100+ Companies</h3>
+                        <p>Over 100 companies already rely on our services.</p>
+                    </div>
+                </li>
+                <li class="choose-us-item">
+                    <div class="choose-us-icon">
+                        <img src="https://via.placeholder.com/20" alt="Check">
+                    </div>
+                    <div class="choose-us-text">
+                        <h3>Premium Technical Support</h3>
+                        <p>Experience unmatched service with our premium support.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="choose-us-images">
+            <img src="images/team.jpg" alt="Teamwork">
+            <img src="images/colab.jpg" alt="Collaboration">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Orlank Technology is one of the leading technology companies in India that offers top-notch IT solutions at cost-effective price ranges. We always keep clients' satisfaction as our utmost priority.</p>
+                <div class="footer-social-icons">
+                    <a href="#">&#9742;</a>
+                    <a href="#">&#128241;</a>
+                    <a href="#">&#127759;</a>
+                    <a href="#">&#128512;</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Links</h3>
+                <a href="#">Home</a><br>
+                <a href="#">About</a><br>
+                <a href="#">Contact</a><br>
+                <a href="#">Blog</a><br>
+                <a href="#">Refund Policy</a><br>
+                <a href="#">Terms and Conditions</a><br>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Details</h3>
+                <p>Phone: +91 91134 91857</p>
+                <p>Email: info@orlank.com</p>
+                <p>Branches: Patna, Noida, Delhi, Mumbai, Hyderabad</p>
+                <a href="#">Discover More</a>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 20px;">Powered By &copy; Orlank Technology Pvt Ltd. - 2023</p>
+    </footer>
+
+    <div class="scroll-to-top" onclick="scrollToTop()">&#8679;</div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script src="script.js"> </script>
+</body>
+</html>
